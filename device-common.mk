@@ -129,6 +129,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml
 
+# system_ext permissions XML from stock
+PRODUCT_COPY_FILES += \
+   	device/google/coral/system_ext-permissions-stock.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/system_ext-permissions-stock.xml
+
 PRODUCT_PACKAGES += \
     extracted-carrierconfig \
     extracted-apns
